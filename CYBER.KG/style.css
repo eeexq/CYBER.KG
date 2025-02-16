@@ -1,0 +1,199 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Темно-синий фон */
+    color: #ffffff; /* Белый текст */
+}
+.navbar {
+    background-color: #025313; /* Зеленый */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: #025313;
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    background-color:001f3f;
+}
+.tag {
+    background-color: #00ff00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.server {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.server h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00ff00; /* Зеленый */
+}
+.server p {
+    margin: 5px 0;
+}
+.server button {
+    background-color: #00ff00;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.video-container {
+    margin-top: 10px;
+}
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+.close {
+    cursor: pointer;
+    float: right;
+    font-size: 1.5em;
+}
+.navbar {
+    background-color: #003366; /* Темный оттенок синего для шапки */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: #002244; /* Еще темнее синий для навигации */
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0); /* Белый текст для контраста */
+}
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: white; /* Белый текст для контраста */
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Темно-синий фон */
+    color: #ffffff; /* Белый текст */
+}
+.navbar {
+    background-color: rgba(0, 51, 102, 0.8); /* Полупрозрачный темно-синий для шапки */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 34, 68, 0.8); /* Полупрозрачный темно-синий для навигации */
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    padding: 50px 20px;
+    text-align: center;
+}
+.content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white; /* Белый текст для контраста */
+}
+.content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    color: white; /* Белый текст для контраста */
+}
+.box {
+    background-color: rgba(0, 51, 102, 0.6); /* Полупрозрачный темно-синий для боксов */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Полупрозрачная белая рамка */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer {
+    background-color: rgba(0, 51, 102, 0.8); /* Полупрозрачный темно-синий для футера */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}

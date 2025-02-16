@@ -1,0 +1,77 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #001f3f; /* Темно-синий фон */
+    color: #ffffff; /* Белый текст */
+}
+.navbar {
+    background-color: rgba(0, 51, 102, 0.8); /* Полупрозрачный темно-синий для шапки */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 34, 68, 0.8); /* Полупрозрачный темно-синий для навигации */
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.shop-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.shop-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white; /* Белый текст для контраста */
+}
+.shop-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.shop-item {
+    background-color: rgba(0, 51, 102, 0.6); /* Полупрозрачный темно-синий для боксов */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Полупрозрачная белая рамка */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.shop-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #00ff00; /* Зеленый для заголовков */
+}
+.shop-item p {
+    font-size: 1em;
+    color: white; /* Белый текст */
+}
+.shop-item button {
+    background-color: #00ff00; /* Зеленая кнопка */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+footer {
+    background-color: rgba(0, 51, 102, 0.8); /* Полупрозрачный темно-синий для футера */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}

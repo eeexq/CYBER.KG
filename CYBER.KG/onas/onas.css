@@ -1,0 +1,87 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+.navbar {
+    background-color: #00ff00; /* Зеленый */
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+.about-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00ff00; /* Зеленый */
+}
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+.team-section {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+.team-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #00ff00; /* Зеленый */
+}
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.team-member {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.team-member h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.team-member p {
+    font-size: 1em;
+    color: #666;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}

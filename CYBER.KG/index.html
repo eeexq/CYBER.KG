@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER.KG - Сервера CS2</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="navbar">CYBER.KG - Сервера CS2</div>
+    <div class="nav-links">
+        <a href="./onas/onas.html" class="button">О нас</a>
+        <a href="./contacs/cont.html" class="button">Контакты</a>
+        <a href="./magaz/magaz.html" class="button">Магазин</a>
+    </div>
+    <div class="tags">
+        <div class="tag">DM</div>
+        <div class="tag">DUELS</div>
+        <div class="tag">RETAKE</div>
+    </div>
+    <div class="container" id="serversContainer"></div>
+    <div id="serverModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="serverTitle"></h2>
+            <p id="serverIP"></p>
+            <button id="joinButton">Присоединиться</button>
+            <button onclick="closeModal()">Закрыть</button>
+        </div>
+    </div>
+
+    <script>
+        const servers = [
+            { name: "DM Server", ip: "192.168.1.1:27015", img: "", video: "https://uacybershoke.com/img/models/2/mp4/DEATHMATCH.mp4" },
+            { name: "Duels Server", ip: "192.168.1.2:27016", img: "", video: "https://uacybershoke.com/img/models/2/mp4/DUELS.mp4" },
+            { name: "Retake Server", ip: "192.168.1.3:27017", img: "", video: "https://uacybershoke.com/img/models/2/mp4/RETAKE.mp4" }
+        ];
+
+        function loadServers() {
+            const container = document.getElementById("serversContainer");
+            container.innerHTML = "";
+            servers.forEach(server => {
+                const serverElement = document.createElement("div");
+                serverElement.classList.add("server");
+
+                let serverContent = `
+                    <h3>${server.name}</h3>
+                    <p>IP: ${server.ip}</p>
+                    <button onclick="openModal('${server.name}', '${server.ip}')">Присоединиться</button>
+                `;
+
+                if (server.video) {
+                    serverContent += `
+                        <div class="video-container">
+                            <video muted loop>
+                                <source src="${server.video}" type="video/mp4">
+                                Ваш браузер не поддерживает видео тег.
+                            </video>
+                        </div>
+                    `;
+                }
+
+                serverElement.innerHTML = serverContent;
+                container.appendChild(serverElement);
+
+                const videoElement = serverElement.querySelector("video");
+                if (videoElement) {
+                    videoElement.addEventListener("mouseover", () => videoElement.play());
+                    videoElement.addEventListener("mouseout", () => videoElement.pause());
+                }
+            });
+        }
+
+        function openModal(title, ip) {
+            document.getElementById("serverTitle").innerText = title;
+            document.getElementById("serverIP").innerText = "IP: " + ip;
+            document.getElementById("joinButton").setAttribute("onclick", `joinServer('${ip}')`);
+            document.getElementById("serverModal").style.display = "flex";
+        }
+
+        function closeModal() {
+            document.getElementById("serverModal").style.display = "none";
+        }
+
+        function joinServer(ip) {
+            window.location.href = `steam://connect/${ip}`;
+        }
+
+        loadServers();
+    </script>
+</body>
+</html>

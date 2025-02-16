@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER.KG - Магазин</title>
+    <link rel="stylesheet" href="/magaz/magaz.css">
+</head>
+<body>
+
+    <body>
+        <a href="">Наш сайт</a>
+        </body>
+
+    <div class="navbar">CYBER.KG - Магазин</div>
+    <div class="nav-links">
+        <a href="../index.html" class="button">Главная</a>
+        <a href="../onas/onas.html" class="button">О нас</a>
+        <a href="../contacs/cont.html" class="button">Контакты</a>
+    </div>
+
+    <div class="shop-section">
+        <h1>Магазин</h1>
+        <div class="shop-items">
+            <!-- VIP Статус -->
+            <div class="shop-item">
+                <h2>VIP Статус</h2>
+                <p>Доступ к эксклюзивным функциям и привилегиям.</p>
+                <p><strong>Цена:</strong> 500 KGS</p>
+                <button onclick="buyItem('VIP Статус')">Купить</button>
+            </div>
+            <!-- Admin Статус -->
+            <div class="shop-item">
+                <h2>Admin Статус</h2>
+                <p>Получи права администратора на серверах.</p>
+                <p><strong>Цена:</strong> 1000 KGS</p>
+                <button onclick="buyItem('Admin Статус')">Купить</button>
+            </div>
+            <!-- Оружие CS2 -->
+            <div class="shop-item">
+                <h2>Оружие CS2</h2>
+                <p>Эксклюзивные скины на оружие в CS2.</p>
+                <p><strong>Цена:</strong> 300 KGS</p>
+                <button onclick="buyItem('Оружие CS2')">Купить</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 CYBER.KG. Все права защищены.</p>
+    </footer>
+
+    <script>
+        function buyItem(itemName) {
+            alert(`Вы купили: ${itemName}`);
+            // Здесь можно добавить логику для обработки покупки
+        }
+    </script>
+
+</body>
+</html>
